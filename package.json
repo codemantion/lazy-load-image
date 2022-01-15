@@ -4,15 +4,14 @@
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
-  "description": "",
+  "description": "A simple and lightweight React Component to lazy load images",
   "author": {
     "name": "Akash Mohapatra",
     "email": "mohapatra.akash99@gmail.com"
   },
   "module": "dist/lazy-load-image.esm.js",
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "engines": {
     "node": ">=10"
@@ -46,6 +45,12 @@
       "limit": "10 KB"
     }
   ],
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "identity-obj-proxy"
+    }
+  },
   "devDependencies": {
     "@babel/core": "^7.16.7",
     "@babel/node": "^7.16.7",
@@ -66,6 +71,7 @@
     "babel-loader": "^8.2.3",
     "babel-plugin-import": "^1.13.3",
     "babel-plugin-styled-components": "^2.0.2",
+    "css-loader": "^6.5.1",
     "eslint": "^8.5.0",
     "eslint-config-next": "^12.0.7",
     "eslint-config-prettier": "^8.3.0",
@@ -73,11 +79,14 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.28.0",
     "husky": "^7.0.4",
+    "identity-obj-proxy": "^3.0.0",
     "lint-staged": "^12.1.4",
+    "postcss": "^8.4.5",
     "prettier": "^2.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-is": "^17.0.2",
+    "rollup-plugin-postcss": "^4.0.2",
     "size-limit": "^7.0.5",
     "tsdx": "^0.14.1",
     "tslib": "^2.3.1",
