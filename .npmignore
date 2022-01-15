@@ -1,5 +1,11 @@
+.idea
 .github
+node_modules
 example
 test
+src
 tsconfig.json
+.eslintignore
+.eslintrc.json
 yarn.lock
+tsdx.config.js

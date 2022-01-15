@@ -1,14 +1,28 @@
 {
-  "name": "lazy-load-image",
-  "version": "0.1.0",
-  "license": "MIT",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "name": "@codemantion/lazy-load-image",
   "description": "A simple and lightweight React Component to lazy load images",
   "author": {
     "name": "Akash Mohapatra",
     "email": "mohapatra.akash99@gmail.com"
   },
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codemantion/lazy-load-image"
+  },
+  "bugs": {
+    "url": "https://github.com/codemantion/lazy-load-image/issues"
+  },
+  "homepage": "https://github.com/codemantion/lazy-load-image",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "lazy-image", "image"
+  ],
   "module": "dist/lazy-load-image.esm.js",
   "files": [
     "dist"
@@ -29,6 +43,11 @@
   },
   "peerDependencies": {
     "react": ">=16"
+  },
+  "peerDependenciesMeta": {
+    "@types/react": {
+      "optional": true
+    }
   },
   "husky": {
     "hooks": {
