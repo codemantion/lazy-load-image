@@ -1,7 +1,7 @@
 const postcss = require('rollup-plugin-postcss');
 
 module.exports = {
-	rollup(config, options) {
+	rollup(config) {
 		config.plugins.push(
 			postcss({
 				plugins: [],
